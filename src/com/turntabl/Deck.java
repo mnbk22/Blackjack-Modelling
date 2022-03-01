@@ -1,7 +1,6 @@
 package com.turntabl;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Deck {
@@ -15,5 +14,15 @@ public class Deck {
         }
     }
 
+    public void shuffle(){
+        Collections.shuffle(deck);
+    }
 
+    public Card draw(){
+        return deck.remove(0);
+    }
+
+    public ArrayList<Card> getDeck() {
+        return deck;
+    }
 }
